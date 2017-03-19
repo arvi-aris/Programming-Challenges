@@ -1,0 +1,45 @@
+.logo{
+	height: 42px;
+	width: 182px;
+	padding-right: 22px;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+.fullWidth{
+	padding:0;
+}
+
+.pagination {
+    display: inline-block;
+    bottom: 2px;
+	position: absolute;
+	right: 648px;
+}
+
+.pagination a {
+    color: #fff;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    background-color: green;
+}
+
+
+
+.pagination a:hover:not(.active) {background-color: white;color:green;}
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.mdl-layout__header-row{
+	background-color: green;
+}

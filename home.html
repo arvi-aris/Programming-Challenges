@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title> Capillary game-arena</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+		<link rel="stylesheet" href="home.css">
+	</head>
+	<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		  <header class="mdl-layout__header">
+		    <div class="mdl-layout__header-row fullWidth">
+		      <span class="mdl-layout-title"><img class="logo" src="/logo.jpg"/>Capillary game arena</span>
+		      <div class="mdl-layout-spacer"></div>
+		      <nav class="mdl-navigation mdl-layout--large-screen-only">
+		      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label">
+  					<label class="mdl-button mdl-js-button mdl-button--icon" for="gameSearch">
+  						<i class="material-icons">search</i>
+  					</label>
+  					<div class="mdl-textfield__expandable-holder">
+  						<input class="mdl-textfield__input gameSearch" type="text" name="gameSearch" id="gameSearch" />
+  					</div>
+  				</div>
+  				<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+       			<div class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+	              <i class="material-icons" id="tt3" >filter_list</i>
+	            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right"
+                for="demo-menu-lower-right">
+              <li class="mdl-menu__item" id="refresh">Refresh</li>
+              <li class="mdl-menu__item" id="sort" order="asc">Sort toggle</li>
+              <li class="mdl-menu__item "><a target="_BLANK" href="https://github.com/arvi-aris/">My GitHub</a></li>
+              <li class="mdl-menu__item "><a target="_BLANK" href="https://in.linkedin.com/in/aravindh-nagarajan-58b91191">My LinkedIn</a></li>
+            </ul>
+		      </nav>
+		    </div>
+		  </header>
+		 
+		  <main class="mdl-layout__content">
+		    <div class="page-content"><div id="msg"> Please wait for a while.. </div>
+		    	<div class="mdl-grid" id="gameContent">
+            	</div>
+		    	<div class="pagination">
+		    		 <a class="page" act="prev" href="#">&laquo;</a>
+					
+  					 <a class="page" href="#" act="next">&raquo;</a>
+		    	</div>
+		    </div>
+		  </main>
+		</div>
+	</body>
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script  src="client-apis.js"></script>		
+	<script  src="clientDomEvents.js"></script>
+	<script  src="client.js"></script>
+</html>
